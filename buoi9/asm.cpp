@@ -21,6 +21,17 @@ int main(){
 	switch(chon){
 		case 1:{
 			printf("1.Kiem tra so nguyen\n\n");
+			
+			float n;
+			printf("Nhap vao so bat ky: ");
+			scanf("%f",&n);
+			
+			if(n==int (n)){
+				printf("%.1f la so nguyen\n\n",n);
+			}
+			else{
+				printf("%.1f khong phai so nguyen\n\n",n);
+			}
 			break;
 		}
 		case 2:{

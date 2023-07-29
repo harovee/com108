@@ -8,7 +8,7 @@ int main(){
 			printf("3.Sap xep theo thu tu giam dan\n");
 			printf("4.Tinh binh phuong cac ptu trong mang 2 chieu\n");
 			printf("___________________________________________\n");
-			printf("Moi ban chon chuc nang: \n");
+			printf("Moi ban chon chuc nang: ");
 			scanf("%d",&chon);
 			
 			switch(chon){
@@ -20,10 +20,11 @@ int main(){
 						
 						int a[n];
 						for(int i=0;i<n;i++){
-							printf("Gia tri cua ptu thu %d trong mang: \n",i+1);
+							printf("Gia tri cua ptu thu %d trong mang: ",i+1);
 							scanf("%d",&a[i]);
 					    }
-					    int tong, tBinh, count = 0;
+					    int count = 0;
+					    float tBinh, tong = 0;
 					    for(int i=0;i<n;i++){
 					    	if(a[i]%3==0){
 					    		tong+=a[i];
@@ -31,7 +32,7 @@ int main(){
 							}
 						}
 						tBinh = tong/count;
-						printf("TB tong cac so chia het cho 3 la %d",tBinh);
+						printf("TB tong cac so chia het cho 3 la %.1f\n",tBinh);
 					break;
 				}
 				case 2:{
