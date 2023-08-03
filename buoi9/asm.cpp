@@ -234,14 +234,16 @@ void tienLai(){
 	scanf("%d",&tienVay);
 	
 	int gocThang = tienVay/12;
-
+	
+	printf("So tien phai tra tung thang la: \n");
 	for(int i=1;i<=12;i++){
 		int tienConLai = tienVay - gocThang*(i-1);
 		int laiThang = tienConLai*0.05;
 		int tienPhaiTra = gocThang + laiThang;
-		printf("%d: %d\n",i,tienPhaiTra);
+		printf("Thang %d: %d VND\n",i,tienPhaiTra);
 	}
-	
+	double value = tienPhaiTra;
+	MessageBox.Show(string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", value));
 }
 void vayTien(){
 }
