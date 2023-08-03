@@ -242,8 +242,6 @@ void tienLai(){
 		int tienPhaiTra = gocThang + laiThang;
 		printf("Thang %d: %d VND\n",i,tienPhaiTra);
 	}
-	double value = tienPhaiTra;
-	MessageBox.Show(string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", value));
 }
 void vayTien(){
 }
