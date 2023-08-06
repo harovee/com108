@@ -90,7 +90,7 @@ void memberInfor(){
 	
 	printf("Nhap can nang tung sinh vien: \n");
 	for(int i=0;i<num;i++){
-		printf("SV thu %d: \n",i+1);
+		printf("SV thu %d: ",i+1);
 		scanf("%d",&weight[i]);
 	}
 	printf("So luong SV la: %d\n",num);
@@ -117,11 +117,14 @@ void memberInfor(){
 		}
 	}
 	printf("\nTrung binh can nang cac SV la: ");
-	float  weightSum;
+	int  weightSum;
+	float weightAver;
+	
 	for(int i=0;i<num;i++){
 		weightSum += weight[i];
 	}
-	printf("%.1f\n",weightSum/num);
+	weightAver = weightSum/num;
+	printf("%.1f\n",weightAver);
 	
 	printf("Vi tri SV dau tien co can nang chan: ");
 	
